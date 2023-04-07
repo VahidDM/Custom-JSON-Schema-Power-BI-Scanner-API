@@ -8,34 +8,33 @@
         "properties": {
           "id": {
             "type": "string",
-			"title": "workspaces ID",
-			"description": "Unique ID for each workspace"
+            "title": "workspaces ID",
+            "description": "Unique ID for each workspace"
           },
           "name": {
             "type": "string",
-			"title": "workspaces name",
-			"description": "Name of Workspace"
+            "title": "workspaces name",
+            "description": "Name of Workspace"
           },
           "type": {
             "type": "string",
-			"title": "workspaces type",
-			"description": "Workspace Type: Workspace,Group,PersonalGroup"
+            "title": "workspaces type",
+            "description": "Workspace Type: Workspace,Group,PersonalGroup"
           },
           "state": {
             "type": "string",
-			"title": "workspaces state",
-			"description": "Workspace State: Active,Deleted,Orphaned,Removing"
+            "title": "workspaces state",
+            "description": "Workspace State: Active,Deleted,Orphaned,Removing"
           },
           "isOnDedicatedCapacity": {
             "type": "boolean",
-			"title": "workspaces isOnDedicatedCapacity",
-			"description": "True if a workspace is on a dedicated capacity, such as Power BI Premium."
-			
+            "title": "workspaces isOnDedicatedCapacity",
+            "description": "True if a workspace is on a dedicated capacity, such as Power BI Premium."
           },
           "capacityId": {
             "type": "string",
-			"title": "workspaces capacityId",
-			"description": "An ID of Workspace's capacity"
+            "title": "workspaces capacityId",
+            "description": "An ID of Workspace's capacity"
           },
           "reports": {
             "type": "array",
@@ -44,51 +43,51 @@
               "properties": {
                 "reportType": {
                   "type": "string",
-				  "title": "reports reportType",
-				  "description": "Type of each Report"
+                  "title": "reports reportType",
+                  "description": "Type of each Report"
                 },
                 "id": {
                   "type": "string",
-				  "title": "reports ID",
-				  "description": "Unique ID for each Report"
+                  "title": "reports ID",
+                  "description": "Unique ID for each Report"
                 },
                 "name": {
                   "type": "string",
-				  "title": "reports name",
-				  "description": "Name of Report"
+                  "title": "reports name",
+                  "description": "Name of Report"
                 },
                 "datasetId": {
                   "type": "string",
-				  "title": "reports datasetId",
-				  "description": "ID of Dataset linked to the Report"
+                  "title": "reports datasetId",
+                  "description": "ID of Dataset linked to the Report"
                 },
                 "createdDateTime": {
                   "type": "string",
-				  "title": "reports createdDateTime",
-				  "description": "Date/Time of the first time a report was created"
+                  "title": "reports createdDateTime",
+                  "description": "Date/Time of the first time a report was created"
                 },
                 "modifiedDateTime": {
                   "type": "string",
-				  "title": "reports modifiedDateTime",
-				  "description": "Date/Time of the last time a report has modified"
+                  "title": "reports modifiedDateTime",
+                  "description": "Date/Time of the last time a report has modified"
                 },
                 "modifiedBy": {
                   "type": "string",
-				  "title": "reports modifiedBy",
-				  "description": "User's email address who modified a report"
+                  "title": "reports modifiedBy",
+                  "description": "User's email address who modified a report"
                 },
                 "createdBy": {
                   "type": "string",
-				  "title": "reports createdBy",
-				  "description": "User's email address who created a report"
+                  "title": "reports createdBy",
+                  "description": "User's email address who created a report"
                 },
                 "modifiedById": {
                   "type": "string",
-				  "title": "reports modified By Id"
+                  "title": "reports modified By Id"
                 },
                 "createdById": {
                   "type": "string",
-				  "title": "reports created By Id"
+                  "title": "reports created By Id"
                 }
               },
               "required": [
@@ -112,18 +111,18 @@
               "properties": {
                 "id": {
                   "type": "string",
-				  "title": "dashboards ID",
-				  "description": "Unique ID for each Dashboard"
+                  "title": "dashboards ID",
+                  "description": "Unique ID for each Dashboard"
                 },
                 "displayName": {
                   "type": "string",
-				  "title": "dashboards displayName",
-				  "description": "Name of Dashboard"
+                  "title": "dashboards displayName",
+                  "description": "Name of Dashboard"
                 },
                 "isReadOnly": {
                   "type": "boolean",
-				  "title": "dashboards isReadOnly",
-				  "description": "Dashboard is Read Only: False/True"
+                  "title": "dashboards isReadOnly",
+                  "description": "Dashboard is Read Only: False/True"
                 },
                 "tiles": {
                   "type": "array",
@@ -145,13 +144,13 @@
               "properties": {
                 "id": {
                   "type": "string",
-				  "title": "datasets ID",
-				  "description": "Unique ID for each Dataset"
+                  "title": "datasets ID",
+                  "description": "Unique ID for each Dataset"
                 },
                 "name": {
                   "type": "string",
-				  "title": "datasets name",
-				  "description": "Name of Dataset"
+                  "title": "datasets name",
+                  "description": "Name of Dataset"
                 },
                 "tables": {
                   "type": "array",
@@ -160,8 +159,8 @@
                     "properties": {
                       "name": {
                         "type": "string",
-						"title": "Tables name",
-						"description": "Name of Table in Dataset"
+                        "title": "Tables name",
+                        "description": "Name of Table in Dataset"
                       },
                       "columns": {
                         "type": "array",
@@ -170,28 +169,28 @@
                           "properties": {
                             "name": {
                               "type": "string",
-							  "title": "Columns name",
-							  "description": "Name of Column in Table in Dataset"
+                              "title": "Columns name",
+                              "description": "Name of Column in Table in Dataset"
                             },
                             "dataType": {
                               "type": "string",
-							  "title": "Columns dataType",
-							  "description": "Type of data in Column in Table in Dataset"
+                              "title": "Columns dataType",
+                              "description": "Type of data in Column in Table in Dataset"
                             },
                             "isHidden": {
                               "type": "boolean",
-							  "title": "Columns isHidden",
-							  "description": "Is Column hidden: False/True"
+                              "title": "Columns isHidden",
+                              "description": "Is Column hidden: False/True"
                             },
                             "columnType": {
                               "type": "string",
-							  "title": "Columns columnType",
-							  "description": "Is it calculated Column or not: Calculated/Data"
+                              "title": "Columns columnType",
+                              "description": "Is it calculated Column or not: Calculated/Data"
                             },
                             "expression": {
                               "type": "string",
-							  "title": "Columns expression",
-							  "description": "DAX code expression for calculated Columns"
+                              "title": "Columns expression",
+                              "description": "DAX code expression for calculated Columns"
                             }
                           },
                           "required": [
@@ -209,23 +208,23 @@
                           "properties": {
                             "name": {
                               "type": "string",
-							  "title": "Measures name",
-							  "description": "Name of Measure in table in dataset "
+                              "title": "Measures name",
+                              "description": "Name of Measure in table in dataset "
                             },
                             "expression": {
                               "type": "string",
-							  "title": "Measures expression",
-							  "description": "Measure DAX expression"
+                              "title": "Measures expression",
+                              "description": "Measure DAX expression"
                             },
                             "isHidden": {
                               "type": "boolean",
-							  "title": "Measures isHidden",
-							  "description": "Is Measure hidden: False/True"
+                              "title": "Measures isHidden",
+                              "description": "Is Measure hidden: False/True"
                             },
                             "description": {
                               "type": "string",
-							  "title": "Measures description",
-							  "description": "Measure description"
+                              "title": "Measures description",
+                              "description": "Measure description"
                             }
                           },
                           "required": [
@@ -245,8 +244,8 @@
                           "properties": {
                             "expression": {
                               "type": "string",
-							  "title": "datasets tables source expression",
-							  "description": "Table Source MCode - PowerQuery"
+                              "title": "datasets tables source expression",
+                              "description": "Table Source MCode - PowerQuery"
                             }
                           },
                           "required": [
@@ -265,38 +264,38 @@
                 },
                 "configuredBy": {
                   "type": "string",
-				  "title": "datasets configuredBy",
-				  "description": "User's email address who modified the Dataset"
+                  "title": "datasets configuredBy",
+                  "description": "User's email address who modified the Dataset"
                 },
                 "configuredById": {
                   "type": "string",
-				  "title": "datasets configuredById"
+                  "title": "datasets configuredById"
                 },
                 "isEffectiveIdentityRequired": {
                   "type": "boolean",
-				  "title": "datasets isEffectiveIdentityRequired"
+                  "title": "datasets isEffectiveIdentityRequired"
                 },
                 "isEffectiveIdentityRolesRequired": {
                   "type": "boolean",
-				  "title": "datasets isEffectiveIdentityRolesRequired"
+                  "title": "datasets isEffectiveIdentityRolesRequired"
                 },
                 "targetStorageMode": {
                   "type": "string",
-				  "title": "datasets targetStorageMode"
+                  "title": "datasets targetStorageMode"
                 },
                 "createdDate": {
                   "type": "string",
-				  "title": "datasets createdDate",
-				  "description": "Date/Time of the first time the Dataset was created"
+                  "title": "datasets createdDate",
+                  "description": "Date/Time of the first time the Dataset was created"
                 },
                 "contentProviderType": {
                   "type": "string",
-				  "title": "datasets contentProviderType",
-				  "description": "content Provider Type:PbixInImportMode,RealTimeInPushMode,UsageMetricsUserReport  "
+                  "title": "datasets contentProviderType",
+                  "description": "content Provider Type:PbixInImportMode,RealTimeInPushMode,UsageMetricsUserReport  "
                 },
                 "schemaMayNotBeUpToDate": {
                   "type": "boolean",
-				  "title": "datasets schemaMayNotBeUpToDate"
+                  "title": "datasets schemaMayNotBeUpToDate"
                 },
                 "expressions": {
                   "type": "array",
@@ -305,11 +304,11 @@
                     "properties": {
                       "name": {
                         "type": "string",
-						"title": "datasets expressions properties"
+                        "title": "datasets expressions properties"
                       },
                       "expression": {
                         "type": "string",
-						"title": "datasets expressions expression"
+                        "title": "datasets expressions expression"
                       }
                     },
                     "required": [
@@ -326,21 +325,21 @@
                   "properties": {
                     "frequency": {
                       "type": "number",
-					  "title": "datasets directQueryRefreshSchedule type"
+                      "title": "datasets directQueryRefreshSchedule type"
                     },
                     "days": {
                       "type": "array",
                       "items": {},
-					  "title": "datasets directQueryRefreshSchedule days"
+                      "title": "datasets directQueryRefreshSchedule days"
                     },
                     "times": {
                       "type": "array",
-					  "title": "datasets directQueryRefreshSchedule times",
+                      "title": "datasets directQueryRefreshSchedule times",
                       "items": {}
                     },
                     "localTimeZoneId": {
                       "type": "string",
-					  "title": "datasets directQueryRefreshSchedule localTimeZoneId"
+                      "title": "datasets directQueryRefreshSchedule localTimeZoneId"
                     }
                   },
                   "required": [
@@ -357,27 +356,27 @@
                       "type": "array",
                       "items": {
                         "type": "string",
-						"title": "datasets refreshSchedule days"
+                        "title": "datasets refreshSchedule days"
                       }
                     },
                     "times": {
                       "type": "array",
                       "items": {
                         "type": "string",
-						"title": "datasets refreshSchedule times"
+                        "title": "datasets refreshSchedule times"
                       }
                     },
                     "enabled": {
                       "type": "boolean",
-					  "title": "datasets refreshSchedule enabled"
+                      "title": "datasets refreshSchedule enabled"
                     },
                     "localTimeZoneId": {
                       "type": "string",
-					  "title": "datasets refreshSchedule localTimeZoneId"
+                      "title": "datasets refreshSchedule localTimeZoneId"
                     },
                     "notifyOption": {
                       "type": "string",
-					  "title": "datasets refreshSchedule notifyOption"
+                      "title": "datasets refreshSchedule notifyOption"
                     }
                   },
                   "required": [
@@ -410,32 +409,32 @@
               "properties": {
                 "objectId": {
                   "type": "string",
-				  "title": "dataflows ID",
-				  "description": "Unique ID for each Dataflow"
+                  "title": "dataflows ID",
+                  "description": "Unique ID for each Dataflow"
                 },
                 "name": {
                   "type": "string",
-				  "title": "dataflows name",
-				  "description": "Name of Dataflow"
+                  "title": "dataflows name",
+                  "description": "Name of Dataflow"
                 },
                 "description": {
                   "type": "string",
-				  "title": "Dataflow description"
+                  "title": "Dataflow description"
                 },
                 "configuredBy": {
                   "type": "string",
-				  "title": "dataflows configuredBy",
-				  "description": "User's email address who configured the Dataflow"
+                  "title": "dataflows configuredBy",
+                  "description": "User's email address who configured the Dataflow"
                 },
                 "modifiedBy": {
                   "type": "string",
-				  "title": "dataflows modifiedBy",
-				  "description": "User's email address who modified the Dataflow"
+                  "title": "dataflows modifiedBy",
+                  "description": "User's email address who modified the Dataflow"
                 },
                 "modifiedDateTime": {
                   "type": "string",
-				  "title": "dataflows modifiedDateTime",
-				  "description": "Date/Time of the last time the Dataflow has modified"
+                  "title": "dataflows modifiedDateTime",
+                  "description": "Date/Time of the last time the Dataflow has modified"
                 }
               },
               "required": [
@@ -455,41 +454,41 @@
               "properties": {
                 "id": {
                   "type": "string",
-				  "title": "datamarts ID",
-				  "description": "Unique ID for each Datamart"
+                  "title": "datamarts ID",
+                  "description": "Unique ID for each Datamart"
                 },
                 "name": {
                   "type": "string",
-				  "title": "datamarts name",
-				  "description": "Name of Datamart"
+                  "title": "datamarts name",
+                  "description": "Name of Datamart"
                 },
                 "type": {
                   "type": "string",
-				  "title": "datamarts type",
-				  "description": "Type of a Datamart: SQL,..."
+                  "title": "datamarts type",
+                  "description": "Type of a Datamart: SQL,..."
                 },
                 "configuredBy": {
                   "type": "string",
-				  "title": "datamarts configuredBy",
-				  "description": "User's email address who configured the Datamart"
+                  "title": "datamarts configuredBy",
+                  "description": "User's email address who configured the Datamart"
                 },
                 "configuredById": {
                   "type": "string",
-				  "title": "datamarts configuredById"
+                  "title": "datamarts configuredById"
                 },
                 "modifiedBy": {
                   "type": "string",
-				  "title": "datamarts modifiedBy",
-				  "description": "User's email address who modified the Datamart"
+                  "title": "datamarts modifiedBy",
+                  "description": "User's email address who modified the Datamart"
                 },
                 "modifiedById": {
                   "type": "string",
-				  "title": "datamarts modifiedById"
+                  "title": "datamarts modifiedById"
                 },
                 "modifiedDateTime": {
                   "type": "string",
-				  "title": "datamarts modifiedDateTime",
-				  "description": "Date/Time of the last time the Datamart has modified"
+                  "title": "datamarts modifiedDateTime",
+                  "description": "Date/Time of the last time the Datamart has modified"
                 }
               },
               "required": [
